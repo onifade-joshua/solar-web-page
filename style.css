@@ -1,0 +1,484 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*General variables*/
+.container{
+    width: 100%;
+    margin: auto;
+}
+body{
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.402);
+    font-family: 'Gill Sans',  Calibri,  sans-serif;
+}
+p{
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+/*Css animation hero section*/
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: 10px;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* header{
+
+
+} */
+.box-social{
+    background-color: rgba(0, 0, 255, 0.769);
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    /* padding-top: 1rem; */
+    position: relative;
+
+}
+.text-item{
+    margin: 0 5px 0 5px;   
+    font-size: 16px;
+    color: #fff;
+}
+
+.text-day{
+    color: black;
+    font-size: 16px;
+    margin: 0 5px 0 5px;   
+    font-size: 16px;
+}
+.social-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+    margin-bottom: 1rem;
+    /* margin: 0 10px 0 10px; */
+    width: 80%;
+    min-height: 80px;
+  
+}
+.media-links{
+    background-color: rgba(211, 211, 211, 0.984);
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* padding: 0 10px 0 10px; */
+    padding: 0.5rem;
+
+}
+.phone-details,
+.days-details,
+.mail-details{
+    display: flex;
+    padding: 1rem;
+ 
+}
+.phone,
+.mail,
+.time{
+    /* padding: 0.8rem; */
+    /* background-color: lavenderblush; */
+    margin: 0.5rem;
+    border-radius: 50%;  
+}
+span{
+    margin-top: 0.5rem;
+    color: rgba(253, 81, 58, 0.925);
+}
+
+i{
+    padding: 0.8rem;
+    background-color: lavenderblush;
+    margin: 0.3rem;
+    border-radius: 50%;
+    /* color: black;  */
+    cursor: pointer;
+}
+i:hover{
+    background-color: rgba(253, 110, 58, 0.824);
+    transition: ease-in 0.3s;
+}
+nav{
+    display: flex;
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.941);
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* background-color: yellow; */
+    width: 100%;
+    padding-top: 0.8rem;
+}
+
+.img-logo{
+    width: 60%;
+    /* height: 5%; */
+    padding-top: 0.8rem;
+}
+ul{
+    display: flex;
+    margin: 0 10px 0 5px;
+}
+li{
+    padding-top: 2.1rem;
+    list-style: none;
+    margin: 0 15px 0 15px;
+    
+}
+.nav-item{
+    text-decoration: none;
+    color: rgba(22, 135, 205, 0.954);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+.holder-box{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    padding-top: 8px;
+    margin-top: 6px;
+    margin-bottom: 50px;
+  
+}
+.search{
+    padding: 13px;
+    cursor: pointer; 
+}
+#btn-pay-buy{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-pay-buy{
+    width: 80%;
+    /* padding: 1rem; */
+    height: 60px;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    background-color: rgba(22, 135, 205, 0.954);
+    border: none;
+    z-index: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-pay-buy:hover{
+    background-color: black;
+    transition: ease-in-out 0.5s;
+}
+
+.hero-section{
+    min-height: 500px;
+    background-color: rgba(211, 211, 211, 0.235);
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Advantages-of-Solar-Energy.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+h3{
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+.btn-wrapper{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+    padding-top: 25px;
+
+}
+.btn-contact-us{
+  width: 18%;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: none;
+  z-index: inherit;
+  font-size: 16px;
+  color: rgba(84, 70, 34, 0.913);
+  font-weight: 600;
+  background: rgba(235, 235, 20, 0.89);
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+.btn-contact-us:hover{
+    background: rgba(235, 235, 20, 0.705);   
+}
+.btn-our-services{
+    width: 18%;
+    padding: 1.5rem;
+    margin: 1rem; 
+    background-color: rgba(22, 135, 205, 0.954);
+    border: none;
+    z-index: inherit;
+    font-size: 16px;
+    color: rgba(118, 91, 24, 0.913);
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+}
+.btn-our-services:hover{
+    background-color: rgba(22, 135, 205, 0.758);   
+}
+.showcase-section{
+    background-color: rgba(255, 182, 193, 0.452);
+    min-height: 500px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+.content-wrapper{
+    display: flex;
+    margin: 1.8rem;
+  
+}
+.box-content{
+    border-top: 2px solid rgba(253, 110, 58, 0.824) ;
+    border-bottom: 2px solid rgba(253, 110, 58, 0.824) ;
+    margin: 1rem;
+    height: 70vh;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: inherit;
+
+}
+.box-content:hover{
+    box-shadow: 2px 3px 2px 3px rgba(253, 110, 58, 0.824);
+    z-index: inherit;
+}
+h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 35px;
+}
+
+.box{
+    margin-top: 10px;
+}
+.read-more{
+    color: orangered;
+    text-decoration: none;
+    font-size: 18px;
+}
+.read-more:hover{
+    text-decoration: underline;
+  
+}
+.article-section{
+   /* background: yellow; */
+   min-height: 500px;
+   padding-top: 25px;
+   width: 100%;
+   z-index: inherit;
+ 
+}
+.article-wrapper{
+ margin: 1rem;
+ padding: 1rem;
+ display: flex;
+}
+.right-area{
+    display: flex;
+ 
+  
+}
+.article-img{
+    margin: 1rem;
+   display: flex;
+   height: 350px;
+   width: 260px;
+   z-index: inherit;
+   border-radius: 5px;
+   box-shadow: 2px;
+  
+}
+
+
+h5{
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: orangered;
+}
+h4{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.exhibition-section{
+    min-height: 200px;
+    background-color: rgba(209, 209, 162, 0.929);
+    text-align: center;
+    padding-top: 80px;
+    z-index: inherit;
+ 
+}
+.image-exhibition-section{
+    min-height: 400px;
+    padding-left: 2rem;
+    padding-top: 50px;
+    background-color: rgb(222, 222, 38);
+    background-image: url(img/Advantages-of-Solar-Energy.jpg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    padding-bottom: 50px;
+  
+  
+}
+.exhibition-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+ 
+}
+.exhibiton-item{
+    height: 450px;
+    width: 90%;
+}
+.exhibition-link{
+    text-decoration: none;
+    font-size: 30px;
+    color: orangered;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.box-exhibition{
+ width: 40%;
+}
+.box1{
+    background-color: #fff;
+    padding: 1rem;
+    width: 300px;
+    height: 140px;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    z-index: inherit;
+}
+.products{
+    min-height: 500px;
+    width: 100%;
+    /* background-color: yellow; */
+
+}
+
+.products-img{
+       margin: 1rem;
+       display: flex;
+       height: 250px;
+       width: 300px;
+       z-index: inherit;
+       border-radius: 5px;
+       box-shadow: 2px;   
+}
+.products-btn{
+    width: 90%;
+    padding: 1.2rem;
+    margin: 1rem; 
+    background-color: rgba(22, 135, 205, 0.954);
+    border: none;
+    z-index: inherit;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    text-align: center;
+}
+.products-btn:hover{
+    background-color: black;
+    transition: ease-in-out 0.3s;
+}
+.products-text-header{
+    text-align: center;
+    /* margin-top: 100px; */
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.product-moto{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+footer{
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.646);
+    text-align: center;
+    padding-top: 60px;
+}
+#footer-text{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.footer-text{
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.footer-sub-text{
+    color: blue;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
